@@ -1,5 +1,7 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { Container, Content } from './styles';
-import { FaFilter } from 'react-icons/fa'
+import { FaFilter } from 'react-icons/fa';
+import { Charts } from '../Charts';
 
 export function Dashboard(){
   return(
@@ -14,6 +16,7 @@ export function Dashboard(){
           <a>Filtrar</a>
         </div>
       </Content>
+      <Charts/>
     </Container>
   )
 }

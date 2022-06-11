@@ -13,6 +13,7 @@ export const Content = styled.div`
   justify-content: space-between;
 
   div{
+    margin-bottom: 2rem;
     h1{
       font-size: 1.75rem;
       font-weight: 700;

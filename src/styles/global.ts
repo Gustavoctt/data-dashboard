@@ -10,5 +10,6 @@ export default createGlobalStyle`
 
   body, input, button {
     font: 14px Montserrat, sans-serif;
+    background: #E5E5E5;
   }
 `
