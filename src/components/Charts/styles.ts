@@ -7,10 +7,12 @@ export const Container = styled.div`
 `
 
 export const Content = styled.div`
-  background: #fff;
+  background: var(--white);
   width: 100%;
   border-radius: 10px;
   position: relative;
+
+  box-shadow: 0 0 1em var(--gray-700);
 
   &:first-child{
     margin-right: 1rem;
@@ -30,7 +32,7 @@ export const TitleBar = styled.div`
   max-width: 300px;
 
   h3{
-    color: #5D405C;
+    color: var(--purple-700);
     font-size: 1rem;
     font-weight: 700;
 

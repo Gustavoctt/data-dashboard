@@ -10,6 +10,16 @@ export default createGlobalStyle`
 
   body, input, button {
     font: 14px Montserrat, sans-serif;
-    background: #E5E5E5;
+    background: var(--gray-500);
+  }
+
+  :root{
+    --white: #fff;
+
+    --gray-500: #E5E5E5;
+    --gray-600: #CEC6CE;
+    --gray-700: #828282;
+    
+    --purple-700: #5D405C;
   }
 `

@@ -17,12 +17,12 @@ export const Content = styled.div`
     h1{
       font-size: 1.75rem;
       font-weight: 700;
-      color: #5D405C;
+      color: var(--purple-700);
     }
 
     span{
       font-size: 0.875rem;
-      color: #828282;
+      color: var(--gray-700);
       font-weight: 500;
       margin-top: 0.5rem;
     }
@@ -34,12 +34,12 @@ export const Content = styled.div`
       
       width: 6.250rem;
       height: 2.5rem;
-      background-color: #5D405C;
+      background-color: var(--purple-700);
       border-radius: 0.625rem;
       cursor: pointer;
 
       a{
-        color:#fff;
+        color: var(--white);
         margin-left: 0.5rem;
       }
     }
