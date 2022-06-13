@@ -1,5 +1,7 @@
 import ReactApexChart from "react-apexcharts";
 import { IoIosInformationCircle } from 'react-icons/io';
+import ReactTooltip from 'react-tooltip';
+
 import { Container, Content, TitleBar } from './styles';
 
 import { optionsBar, seriesBar } from '../../services/barChartData';
@@ -12,7 +14,12 @@ export function Charts(){
       <Content>
         <TitleBar>
           <h3>Barras</h3>
-          <IoIosInformationCircle size={20} color="#19D7AA" />
+          <a  data-tip data-for="bar">
+            <IoIosInformationCircle  size={20} color="#19D7AA" />
+            <ReactTooltip id="bar" effect="solid" type="dark">
+              <span>Total de jogos em copa do mundo</span>
+            </ReactTooltip>
+          </a>
         </TitleBar>
         <ReactApexChart 
           options={optionsBar}
@@ -24,7 +31,12 @@ export function Charts(){
       <Content>
         <TitleBar>
           <h3>Scatter</h3>
-          <IoIosInformationCircle size={20} color="#19D7AA" />
+          <a data-tip data-for="scatter">
+            <IoIosInformationCircle size={20} color="#19D7AA" />
+            <ReactTooltip id="scatter" effect="solid" type="dark">
+              <span>Total de jogos por edição de copa do mundo</span>
+            </ReactTooltip>
+          </a>
         </TitleBar>
         <ReactApexChart 
           options={scatterData.options}
