@@ -14,12 +14,12 @@ export function Charts(){
       <Content>
         <TitleBar>
           <h3>Barras</h3>
-          <a  data-tip data-for="bar">
+          <div  data-tip data-for="bar">
             <IoIosInformationCircle  size={20} color="#19D7AA" />
             <ReactTooltip id="bar" effect="solid" type="dark">
               <span>Total de jogos em copa do mundo</span>
             </ReactTooltip>
-          </a>
+          </div>
         </TitleBar>
         <ReactApexChart 
           options={optionsBar}
@@ -31,12 +31,12 @@ export function Charts(){
       <Content>
         <TitleBar>
           <h3>Scatter</h3>
-          <a data-tip data-for="scatter">
+          <div data-tip data-for="scatter">
             <IoIosInformationCircle size={20} color="#19D7AA" />
             <ReactTooltip id="scatter" effect="solid" type="dark">
               <span>Total de jogos por edição de copa do mundo</span>
             </ReactTooltip>
-          </a>
+          </div>
         </TitleBar>
         <ReactApexChart 
           options={scatterData.options}
