@@ -5,17 +5,6 @@ export const optionsBar = {
       enabled: false
     }
   },
-  // title: {
-  //   text: undefined,
-  //   margin: 10,      
-  //   offsetX: 10,
-  //   offsetY: 15,
-  //   style:{
-  //     fontSize:'16px',
-  //     fontFamily: 'Montserrat',
-  //     color: '#5D405C',
-  //   },
-  // },
   plotOptions:{
     bar:{
       horizontal: true,
@@ -27,11 +16,16 @@ export const optionsBar = {
   dataLabels: {
     enabled: false
   },
+  xaxis: {
+    categories: ['Alemanha', 'Brasil', 'Italia', 'Argentina', 'França', 'Inglaterra', 'Espanha', 
+     'Holanda', 'Uruguai', 'Suécia'
+    ],
+  }
 };
 
 export const seriesBar = [
   {
-    name: "My Tasks",
-    data: [11, 32, 45, 32, 34, 52, 41]
+    name: "Jogos em copas do mundo",
+    data: [109, 109, 83, 81, 66, 69, 63, 50, 56, 51]
   }
 ];

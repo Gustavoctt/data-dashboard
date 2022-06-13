@@ -3,9 +3,10 @@ import { IoIosInformationCircle } from 'react-icons/io';
 import { Container, Content, TitleBar } from './styles';
 
 import { optionsBar, seriesBar } from '../../services/barChartData';
-import { series2 } from '../../services/scatterChartData';
+import { scatterData } from '../../services/scatterChartData';
 
 export function Charts(){
+
   return (
     <Container>
       <Content>
@@ -26,8 +27,9 @@ export function Charts(){
           <IoIosInformationCircle size={20} color="#19D7AA" />
         </TitleBar>
         <ReactApexChart 
-          options={optionsBar}
-          series={series2}
+          options={scatterData.options}
+          
+          series={scatterData.series}
           type="scatter"
           height={500}
         />
